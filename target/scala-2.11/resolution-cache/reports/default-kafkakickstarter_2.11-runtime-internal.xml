@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ivy-report.xsl"?>
+<ivy-report version="1.0">
+	<info
+		organisation="default"
+		module="kafkakickstarter_2.11"
+		revision="0.1"
+		conf="runtime-internal"
+		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
+		date="20190111034814"/>
+	<dependencies>
+		<module organisation="org.openweathermap.java-api" name="api-model">
+			<revision name="1.2" status="release" pubdate="20190111033415" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/xSAVIKx/openweathermap-java-api" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+				<license name="The Apache Software License, Version 2.0" url="https://github.com/xSAVIKx/openweathermap-java-api/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="3094" time="0" location="C:\Users\Swagger\.ivy2\cache\org.openweathermap.java-api\api-model\ivy-1.2.xml" searched="false" origin-is-local="true" origin-location="C:\Users\Swagger\.sbt\preloaded\org\openweathermap\java-api\api-model\1.2\api-model-1.2.pom"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="api-model" type="jar" ext="jar" status="no" details="" size="32334" time="0" location="C:\Users\Swagger\.sbt\preloaded\org\openweathermap\java-api\api-model\1.2\api-model-1.2.jar">
+						<origin-location is-local="true" location="C:\Users\Swagger\.sbt\preloaded\org\openweathermap\java-api\api-model\1.2\api-model-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.openweathermap.java-api" name="api-common">
+			<revision name="1.2" status="release" pubdate="20190111031131" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/xSAVIKx/openweathermap-java-api" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="20">
+				<license name="The Apache Software License, Version 2.0" url="https://github.com/xSAVIKx/openweathermap-java-api/blob/master/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2950" time="0" location="C:\Users\Swagger\.ivy2\cache\org.openweathermap.java-api\api-common\ivy-1.2.xml" searched="false" origin-is-local="true" origin-location="C:\Users\Swagger\.m2\repository\org\openweathermap\java-api\api-common\1.2\api-common-1.2.pom"/>
+				<caller organisation="org.openweathermap.java-api" name="api-model" conf="default, compile, runtime, master" rev="1.2" rev-constraint-default="1.2" rev-constraint-dynamic="1.2" callerrev="1.2"/>
+				<artifacts>
+					<artifact name="api-common" type="jar" ext="jar" status="no" details="" size="2086" time="0" location="C:\Users\Swagger\.m2\repository\org\openweathermap\java-api\api-common\1.2\api-common-1.2.jar">
+						<origin-location is-local="true" location="C:\Users\Swagger\.m2\repository\org\openweathermap\java-api\api-common\1.2\api-common-1.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.google.code.gson" name="gson">
+			<revision name="2.8.2" status="release" pubdate="20170919214242" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="19">
+				<license name="Apache 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3635" time="0" location="C:\Users\Swagger\.ivy2\cache\com.google.code.gson\gson\ivy-2.8.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.2/gson-2.8.2.pom"/>
+				<caller organisation="org.openweathermap.java-api" name="api-model" conf="default, compile, runtime, master" rev="2.8.2" rev-constraint-default="2.8.2" rev-constraint-dynamic="2.8.2" callerrev="1.2"/>
+				<caller organisation="org.openweathermap.java-api" name="api-common" conf="compile, runtime" rev="2.8.2" rev-constraint-default="2.8.2" rev-constraint-dynamic="2.8.2" callerrev="1.2"/>
+				<artifacts>
+					<artifact name="gson" type="jar" ext="jar" status="no" details="" size="232932" time="0" location="C:\Users\Swagger\.ivy2\cache\com.google.code.gson\gson\jars\gson-2.8.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.2/gson-2.8.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.projectlombok" name="lombok">
+			<revision name="1.16.20" status="release" pubdate="20180108185747" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://projectlombok.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="18">
+				<license name="The MIT License" url="https://projectlombok.org/LICENSE"/>
+				<metadata-artifact status="no" details="" size="2601" time="0" location="C:\Users\Swagger\.ivy2\cache\org.projectlombok\lombok\ivy-1.16.20.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/projectlombok/lombok/1.16.20/lombok-1.16.20.pom"/>
+				<caller organisation="org.openweathermap.java-api" name="api-model" conf="default, compile, runtime, master" rev="1.16.20" rev-constraint-default="1.16.20" rev-constraint-dynamic="1.16.20" callerrev="1.2"/>
+				<caller organisation="org.openweathermap.java-api" name="api-common" conf="compile, runtime" rev="1.16.20" rev-constraint-default="1.16.20" rev-constraint-dynamic="1.16.20" callerrev="1.2"/>
+				<artifacts>
+					<artifact name="lombok" type="jar" ext="jar" status="no" details="" size="1529616" time="0" location="C:\Users\Swagger\.ivy2\cache\org.projectlombok\lombok\jars\lombok-1.16.20.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/projectlombok/lombok/1.16.20/lombok-1.16.20.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kafka" name="connect-json">
+			<revision name="1.1.0" status="release" pubdate="20180323190643" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kafka.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3598" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.kafka\connect-json\ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kafka/connect-json/1.1.0/connect-json-1.1.0.pom"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="connect-json" type="jar" ext="jar" status="no" details="" size="45021" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.kafka\connect-json\jars\connect-json-1.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kafka/connect-json/1.1.0/connect-json-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kafka" name="connect-api">
+			<revision name="1.1.0" status="release" pubdate="20180323190604" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kafka.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="14">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3040" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.kafka\connect-api\ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kafka/connect-api/1.1.0/connect-api-1.1.0.pom"/>
+				<caller organisation="org.apache.kafka" name="connect-json" conf="default, compile, runtime, master" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.1.0"/>
+				<artifacts>
+					<artifact name="connect-api" type="jar" ext="jar" status="no" details="" size="89591" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.kafka\connect-api\jars\connect-api-1.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kafka/connect-api/1.1.0/connect-api-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.kafka" name="kafka-clients">
+			<revision name="1.1.0" status="release" pubdate="20180323190416" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://kafka.apache.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="15">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3700" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.kafka\kafka-clients\ivy-1.1.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/1.1.0/kafka-clients-1.1.0.pom"/>
+				<caller organisation="org.apache.kafka" name="connect-api" conf="compile, runtime" rev="1.1.0" rev-constraint-default="1.1.0" rev-constraint-dynamic="1.1.0" callerrev="1.1.0"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="kafka-clients" type="jar" ext="jar" status="no" details="" size="1721443" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.kafka\kafka-clients\jars\kafka-clients-1.1.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/1.1.0/kafka-clients-1.1.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.0.0" status="release" pubdate="20171027123112" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="http://kafka.apache.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3696" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.kafka\kafka-clients\ivy-1.0.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/kafka/kafka-clients/1.0.0/kafka-clients-1.0.0.pom"/>
+				<evicted-by rev="1.1.0"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.0.0" rev-constraint-default="1.0.0" rev-constraint-dynamic="1.0.0" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.xerial.snappy" name="snappy-java">
+			<revision name="1.1.7.1" status="release" pubdate="20171207145110" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/xerial/snappy-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="16">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3983" time="0" location="C:\Users\Swagger\.ivy2\cache\org.xerial.snappy\snappy-java\ivy-1.1.7.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.pom"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="compile, runtime" rev="1.1.7.1" rev-constraint-default="1.1.7.1" rev-constraint-dynamic="1.1.7.1" callerrev="1.1.0"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="default, compile, runtime, master" rev="1.1.4" rev-constraint-default="1.1.4" rev-constraint-dynamic="1.1.4" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="snappy-java" type="jar" ext="jar" status="no" details="" size="2019013" time="0" location="C:\Users\Swagger\.ivy2\cache\org.xerial.snappy\snappy-java\jars\snappy-java-1.1.7.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.7.1/snappy-java-1.1.7.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.1.4" status="release" pubdate="20170522120501" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/xerial/snappy-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="3487" time="0" location="C:\Users\Swagger\.ivy2\cache\org.xerial.snappy\snappy-java\ivy-1.1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/xerial/snappy/snappy-java/1.1.4/snappy-java-1.1.4.pom"/>
+				<evicted-by rev="1.1.7.1"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="default, compile, runtime, master" rev="1.1.4" rev-constraint-default="1.1.4" rev-constraint-dynamic="1.1.4" callerrev="1.0.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-databind">
+			<revision name="2.9.5" status="release" pubdate="20180326111920" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master, runtime(*), master(compile), compile(*)" position="10">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22771" time="0" location="C:\Users\Swagger\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\ivy-2.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.pom"/>
+				<caller organisation="org.apache.kafka" name="connect-json" conf="default, compile, runtime, master" rev="2.9.4" rev-constraint-default="2.9.4" rev-constraint-dynamic="2.9.4" callerrev="1.1.0"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.9.5" rev-constraint-default="2.9.5" rev-constraint-dynamic="2.9.5" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jackson-databind" type="bundle" ext="jar" status="no" details="" size="1342410" time="0" location="C:\Users\Swagger\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.9.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-databind/2.9.5/jackson-databind-2.9.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.9.4" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="2.9.5"/>
+				<caller organisation="org.apache.kafka" name="connect-json" conf="default, compile, runtime, master" rev="2.9.4" rev-constraint-default="2.9.4" rev-constraint-dynamic="2.9.4" callerrev="1.1.0"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-core">
+			<revision name="2.9.5" status="release" pubdate="20180326110520" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="12">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22054" time="0" location="C:\Users\Swagger\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.9.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="default, compile, runtime, master" rev="2.9.5" rev-constraint-default="2.9.5" rev-constraint-dynamic="2.9.5" callerrev="2.9.5"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="jackson-core" type="bundle" ext="jar" status="no" details="" size="321590" time="0" location="C:\Users\Swagger\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.9.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.5/jackson-core-2.9.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="2.9.2" status="release" pubdate="20171013232611" resolver="sbt-chain" artresolver="sbt-chain" evicted="latest-revision" evicted-reason="" homepage="https://github.com/FasterXML/jackson-core" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="-1">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="22054" time="0" location="C:\Users\Swagger\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\ivy-2.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-core/2.9.2/jackson-core-2.9.2.pom"/>
+				<evicted-by rev="2.9.5"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.9.2" rev-constraint-default="2.9.2" rev-constraint-dynamic="2.9.2" callerrev="0.1"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.fasterxml.jackson.core" name="jackson-annotations">
+			<revision name="2.9.0" status="release" pubdate="20170729235340" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://github.com/FasterXML/jackson" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="11">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7030" time="0" location="C:\Users\Swagger\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\ivy-2.9.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.pom"/>
+				<caller organisation="com.fasterxml.jackson.core" name="jackson-databind" conf="default, compile, runtime, master" rev="2.9.0" rev-constraint-default="2.9.0" rev-constraint-dynamic="2.9.0" callerrev="2.9.5"/>
+				<artifacts>
+					<artifact name="jackson-annotations" type="bundle" ext="jar" status="no" details="" size="66519" time="0" location="C:\Users\Swagger\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.9.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/fasterxml/jackson/core/jackson-annotations/2.9.0/jackson-annotations-2.9.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.clapper" name="grizzled-slf4j_2.11">
+			<revision name="1.3.3" status="release" pubdate="20181207174147" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://software.clapper.org/grizzled-slf4j/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="9">
+				<license name="BSD" url="http://software.clapper.org/grizzled-slf4j/license.html"/>
+				<metadata-artifact status="no" details="" size="3022" time="0" location="C:\Users\Swagger\.ivy2\cache\org.clapper\grizzled-slf4j_2.11\ivy-1.3.3.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.11/1.3.3/grizzled-slf4j_2.11-1.3.3.pom"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.3.3" rev-constraint-default="1.3.3" rev-constraint-dynamic="1.3.3" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="grizzled-slf4j_2.11" type="jar" ext="jar" status="no" details="" size="7501" time="0" location="C:\Users\Swagger\.ivy2\cache\org.clapper\grizzled-slf4j_2.11\jars\grizzled-slf4j_2.11-1.3.3.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/clapper/grizzled-slf4j_2.11/1.3.3/grizzled-slf4j_2.11-1.3.3.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-simple">
+			<revision name="1.7.5" status="release" pubdate="20130325165226" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="8">
+				<license name="MIT License" url="http://www.opensource.org/licenses/mit-license.php"/>
+				<metadata-artifact status="no" details="" size="4471" time="0" location="C:\Users\Swagger\.ivy2\cache\org.slf4j\slf4j-simple\ivy-1.7.5.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5.pom"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="slf4j-simple" type="jar" ext="jar" status="no" details="" size="10680" time="0" location="C:\Users\Swagger\.ivy2\cache\org.slf4j\slf4j-simple\jars\slf4j-simple-1.7.5.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/slf4j/slf4j-simple/1.7.5/slf4j-simple-1.7.5.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-reflect">
+			<revision name="2.11.12" status="release" pubdate="20171102213736" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="7">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2864" time="0" location="C:\Users\Swagger\.ivy2\cache\org.scala-lang\scala-reflect\ivy-2.11.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.pom"/>
+				<caller organisation="org.apache.logging.log4j" name="log4j-api-scala_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="11.0"/>
+				<artifacts>
+					<artifact name="scala-reflect" type="jar" ext="jar" status="no" details="" size="4623075" time="0" location="C:\Users\Swagger\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-reflect/2.11.12/scala-reflect-2.11.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-api-scala_2.11">
+			<revision name="11.0" status="release" pubdate="20170716122807" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="6">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="7738" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.logging.log4j\log4j-api-scala_2.11\ivy-11.0.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api-scala_2.11/11.0/log4j-api-scala_2.11-11.0.pom"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="11.0" rev-constraint-default="11.0" rev-constraint-dynamic="11.0" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="log4j-api-scala_2.11" type="jar" ext="jar" status="no" details="" size="314205" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.logging.log4j\log4j-api-scala_2.11\jars\log4j-api-scala_2.11-11.0.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api-scala_2.11/11.0/log4j-api-scala_2.11-11.0.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-core">
+			<revision name="2.11.1" status="release" pubdate="20180722234619" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="5">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="36308" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.logging.log4j\log4j-core\ivy-2.11.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.11.1/log4j-core-2.11.1.pom"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="log4j-core" type="jar" ext="jar" status="no" details="" size="1607947" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.11.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/2.11.1/log4j-core-2.11.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.apache.logging.log4j" name="log4j-api">
+			<revision name="2.11.1" status="release" pubdate="20180722234454" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="4">
+				<license name="Apache License, Version 2.0" url="https://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="30865" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.logging.log4j\log4j-api\ivy-2.11.1.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.pom"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.11.1" rev-constraint-default="2.11.1" rev-constraint-dynamic="2.11.1" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="log4j-api" type="jar" ext="jar" status="no" details="" size="264060" time="0" location="C:\Users\Swagger\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.11.1.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/2.11.1/log4j-api-2.11.1.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.slf4j" name="slf4j-api">
+			<revision name="1.7.25" status="release" pubdate="20170316123632" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.slf4j.org" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master, default, default(compile)" position="3">
+				<metadata-artifact status="no" details="" size="5279" time="0" location="C:\Users\Swagger\.ivy2\cache\org.slf4j\slf4j-api\ivy-1.7.25.xml" searched="false" origin-is-local="false" origin-location="file:/C:/Users/Swagger/.sbt/preloaded/org.slf4j/slf4j-api/1.7.25/ivys/ivy.xml"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.1.0"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.11" conf="default, compile, runtime, master" rev="1.7.9" rev-constraint-default="1.7.9" rev-constraint-dynamic="1.7.9" callerrev="1.3.3"/>
+				<caller organisation="org.apache.kafka" name="connect-api" conf="compile, runtime" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.1.0"/>
+				<caller organisation="org.apache.kafka" name="connect-json" conf="default, compile, runtime, master" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.1.0"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.1"/>
+				<caller organisation="org.slf4j" name="slf4j-simple" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.7.5"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="default, compile, runtime, master" rev="1.7.25" rev-constraint-default="1.7.25" rev-constraint-dynamic="1.7.25" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="slf4j-api" type="jar" ext="jar" status="no" details="" size="41203" time="0" location="C:\Users\Swagger\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.25.jar">
+						<origin-location is-local="false" location="file:/C:/Users/Swagger/.sbt/preloaded/org.slf4j/slf4j-api/1.7.25/jars/slf4j-api.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+			<revision name="1.7.9" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="-1">
+				<evicted-by rev="1.7.25"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.11" conf="default, compile, runtime, master" rev="1.7.9" rev-constraint-default="1.7.9" rev-constraint-dynamic="1.7.9" callerrev="1.3.3"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+			<revision name="1.7.5" evicted="latest-revision" evicted-reason="" downloaded="false" searched="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="-1">
+				<evicted-by rev="1.7.25"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="0.1"/>
+				<caller organisation="org.slf4j" name="slf4j-simple" conf="default, compile, runtime, master" rev="1.7.5" rev-constraint-default="1.7.5" rev-constraint-dynamic="1.7.5" callerrev="1.7.5"/>
+				<artifacts>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.lz4" name="lz4-java">
+			<revision name="1.4" status="release" pubdate="20170802161907" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/lz4/lz4-java" downloaded="false" searched="false" default="false" conf="compile, runtime(*), master(compile), runtime, compile(*), master" position="2">
+				<license name="The Apache Software License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
+				<metadata-artifact status="no" details="" size="2767" time="0" location="C:\Users\Swagger\.ivy2\cache\org.lz4\lz4-java\ivy-1.4.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4/lz4-java-1.4.pom"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="compile, runtime" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.1.0"/>
+				<caller organisation="org.apache.kafka" name="kafka-clients" conf="default, compile, runtime, master" rev="1.4" rev-constraint-default="1.4" rev-constraint-dynamic="1.4" callerrev="1.0.0"/>
+				<artifacts>
+					<artifact name="lz4-java" type="jar" ext="jar" status="no" details="" size="370119" time="0" location="C:\Users\Swagger\.ivy2\cache\org.lz4\lz4-java\jars\lz4-java-1.4.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/lz4/lz4-java/1.4/lz4-java-1.4.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="com.typesafe" name="config">
+			<revision name="1.3.2" status="release" pubdate="20171006100218" resolver="sbt-chain" artresolver="sbt-chain" homepage="https://github.com/typesafehub/config" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="1">
+				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0"/>
+				<metadata-artifact status="no" details="" size="2910" time="0" location="C:\Users\Swagger\.ivy2\cache\com.typesafe\config\ivy-1.3.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.2/config-1.3.2.pom"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="1.3.2" rev-constraint-default="1.3.2" rev-constraint-dynamic="1.3.2" callerrev="0.1"/>
+				<artifacts>
+					<artifact name="config" type="bundle" ext="jar" status="no" details="" size="286020" time="0" location="C:\Users\Swagger\.ivy2\cache\com.typesafe\config\bundles\config-1.3.2.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/com/typesafe/config/1.3.2/config-1.3.2.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+		<module organisation="org.scala-lang" name="scala-library">
+			<revision name="2.11.12" status="release" pubdate="20171102213730" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.scala-lang.org/" extra-info.apiURL="http://www.scala-lang.org/api/2.11.12/" downloaded="false" searched="false" default="false" conf="default, compile, runtime(*), master(compile), runtime, default(compile), compile(*), master" position="0">
+				<license name="BSD 3-Clause" url="http://www.scala-lang.org/license.html"/>
+				<metadata-artifact status="no" details="" size="2688" time="0" location="C:\Users\Swagger\.ivy2\cache\org.scala-lang\scala-library\ivy-2.11.12.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.pom"/>
+				<caller organisation="org.apache.logging.log4j" name="log4j-api-scala_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="11.0"/>
+				<caller organisation="org.clapper" name="grizzled-slf4j_2.11" conf="default, compile, runtime, master" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="1.3.3"/>
+				<caller organisation="default" name="kafkakickstarter_2.11" conf="compile, runtime-internal, runtime, optional" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="0.1"/>
+				<caller organisation="org.scala-lang" name="scala-reflect" conf="compile, runtime" rev="2.11.12" rev-constraint-default="2.11.12" rev-constraint-dynamic="2.11.12" callerrev="2.11.12"/>
+				<artifacts>
+					<artifact name="scala-library" type="jar" ext="jar" status="no" details="" size="5749423" time="0" location="C:\Users\Swagger\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.12.jar">
+						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/scala-lang/scala-library/2.11.12/scala-library-2.11.12.jar"/>
+					</artifact>
+				</artifacts>
+			</revision>
+		</module>
+	</dependencies>
+</ivy-report>
